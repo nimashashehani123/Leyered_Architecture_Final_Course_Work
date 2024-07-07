@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" cacheShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1014.0" prefWidth="1920.0" styleClass="colorBackground" stylesheets="@../CSS/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Naturab.Controller.LoginFormController">
+   <children>
+      <Polygon fill="#b19cd9" layoutX="1851.0" layoutY="-97.0" points="-814.0, -94.25, -331.0, 409.75, 119.0, -29.25" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <Reflection />
+         </effect>
+      </Polygon>
+      <Polygon fill="#e0b0ff" layoutX="1671.0" layoutY="949.0" opacity="0.81" points="-120.0, -288.0, 118.0, -670.0, 177.0, -468.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0">
+         <effect>
+            <Reflection />
+         </effect>
+      </Polygon>
+      <AnchorPane layoutY="21.0" prefHeight="951.0" prefWidth="897.0" styleClass="shadowed" stylesheets="@/CSS/style.css">
+         <children>
+            <Polygon fill="#b19cd9" layoutX="41.0" layoutY="-8.0" points="836.0, 478.0, -41.0, 1215.0, -41.0, -257.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Polygon fill="#3e274d" layoutX="-90.0" layoutY="-1.0" points="865.0, 472.0, -41.0, 1215.0, -41.0, -257.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+            <Label layoutX="86.0" layoutY="231.0" styleClass="lbls" stylesheets="@../CSS/style.css" text="Naturab ">
+               <font>
+                  <Font name="Dhurjati" size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="391.0" styleClass="lbls" stylesheets="@../CSS/style.css" text="Accessories" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="roots" layoutX="875.0" layoutY="74.0" prefHeight="764.0" prefWidth="851.0">
+         <children>
+            <AnchorPane layoutX="27.0" layoutY="25.0" prefHeight="743.0" prefWidth="876.0">
+               <children>
+                  <VBox layoutX="72.0" layoutY="9.0" prefHeight="734.0" prefWidth="547.0" style="-fx-background-color: #ffffff;" stylesheets="@../CSS/style.css">
+                     <styleClass>
+                        <String fx:value="VBox" />
+                        <String fx:value="shadowed" />
+                     </styleClass>
+                  </VBox>
+                  <ImageView cache="true" fitHeight="734.0" fitWidth="504.0" focusTraversable="true" layoutX="92.0" layoutY="9.0" pickOnBounds="true" smooth="false">
+                     <image>
+                        <Image url="@../image/photo.png" />
+                     </image>
+                  </ImageView>
+                  <Hyperlink fx:id="linkRejistration" layoutX="367.0" layoutY="605.0" onAction="#linkRejistrationOnAction" text="Rejister On Here">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Hyperlink>
+                  <Label layoutX="173.0" layoutY="601.0" prefHeight="37.0" prefWidth="211.0" text="Don't have an account?" textFill="#4e3283">
+                     <font>
+                        <Font name="Dyuthi Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="30.0" fitWidth="35.0" layoutX="405.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/login.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="51.0" fitWidth="37.0" layoutX="131.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/user.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="37.0" fitWidth="51.0" layoutX="136.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/password.png" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="btnLogin" layoutX="269.0" layoutY="510.0" onAction="#btnLoginOnAction" onMouseEntered="#onmouseentered" prefHeight="51.0" prefWidth="153.0" styleClass="btn" stylesheets="@../CSS/style.css" text="Login" textFill="WHITE" />
+                  <Label layoutX="311.0" layoutY="83.0" prefHeight="51.0" prefWidth="101.0" styleClass="lbl" stylesheets="@../CSS/style.css" text="LOG IN" textFill="#f1ecf5">
+                     <font>
+                        <Font name="Dyuthi Regular" size="62.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUserId" layoutX="191.0" layoutY="246.0" onAction="#onaction" onMouseReleased="#idmousereleased" prefHeight="51.0" prefWidth="370.0" promptText="UserId" styleClass="V_Box" stylesheets="@../CSS/style.css" />
+                  <TextField fx:id="txtPassword" layoutX="193.0" layoutY="366.0" onAction="#pwonaction" onMouseReleased="#passwordmousereleased" prefHeight="51.0" prefWidth="370.0" promptText="Password" styleClass="V_Box" stylesheets="@../CSS/style.css" />
+                  <ImageView fx:id="closedeye" fitHeight="30.0" fitWidth="43.0" layoutX="521.0" layoutY="377.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/closedeye.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="402.0" layoutY="432.0" prefHeight="33.0" prefWidth="153.0" styleClass="lbl2" stylesheets="@../CSS/style.css" text="Forgot password ?">
+                     <font>
+                        <Font name="Dyuthi Regular" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="214.0" layoutY="432.0" prefHeight="26.0" prefWidth="127.0" styleClass="lbl2" stylesheets="@../CSS/style.css" text="Remember me" textFill="#4e3283">
+                     <font>
+                        <Font name="Dyuthi Regular" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="28.0" fitWidth="18.0" layoutX="193.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/tickbox.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="127.0" fitWidth="177.0" layoutX="1710.0" layoutY="860.0" opacity="0.79" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/naturablogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

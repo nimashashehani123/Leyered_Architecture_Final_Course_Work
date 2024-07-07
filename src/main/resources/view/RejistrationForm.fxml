@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<AnchorPane fx:id="RejistrationForm" prefHeight="743.0" prefWidth="876.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Naturab.Controller.RejistrationFormController">
+   <children>
+      <VBox opacity="0.92" prefHeight="743.0" prefWidth="876.0" styleClass="V_Box" stylesheets="@../CSS/style.css">
+         <effect>
+            <Shadow blurType="GAUSSIAN" radius="4.75" width="0.0">
+               <color>
+                  <Color red="0.9215686321258545" green="0.8823529481887817" blue="0.9607843160629272" />
+               </color>
+            </Shadow>
+         </effect>
+      </VBox>
+      <Label layoutX="235.0" layoutY="55.0" prefHeight="54.0" prefWidth="261.0" styleClass="lbl" stylesheets="@../CSS/style.css" text="REJISTRATION FORM" />
+      <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="496.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/rejistration.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="111.0" layoutY="225.0" styleClass="lbl1" stylesheets="@../CSS/style.css" text="User Id" />
+      <Label layoutX="111.0" layoutY="312.0" styleClass="lbl1" stylesheets="@../CSS/style.css" text="User Name" />
+      <Label layoutX="114.0" layoutY="405.0" styleClass="lbl1" stylesheets="@../CSS/style.css" text="Password" />
+      <ImageView fitHeight="413.0" fitWidth="382.0" layoutX="490.0" layoutY="330.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../image/rphoto.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtuserid" layoutX="250.0" layoutY="212.0" onKeyReleased="#txtidOnKeyReleased" prefHeight="46.0" prefWidth="364.0" promptText="Input your User Id here" styleClass="V_Box" stylesheets="@../CSS/style.css" />
+      <TextField fx:id="txtusername" layoutX="250.0" layoutY="300.0" onKeyReleased="#txtnameOnKeyReleased" prefHeight="46.0" prefWidth="364.0" promptText="Input your User Name here" styleClass="V_Box" stylesheets="@../CSS/style.css" />
+      <TextField fx:id="txtpassword" layoutX="250.0" layoutY="396.0" onKeyReleased="#txtpasswordOnKeyReleased" prefHeight="46.0" prefWidth="364.0" promptText="Input your Password here" styleClass="V_Box" stylesheets="@../CSS/style.css" />
+      <JFXButton fx:id="btnReg" layoutX="366.0" layoutY="535.0" onAction="#btnRegOnAction" prefHeight="54.0" prefWidth="166.0" styleClass="btn" stylesheets="@../CSS/style.css" text="Rejister Now" textFill="WHITE" />
+      <JFXButton fx:id="btnback" layoutX="19.0" layoutY="22.0" onAction="#btnbackOnAction" prefHeight="46.0" prefWidth="0.0" text=" ">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="40.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../image/back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
